@@ -4,6 +4,10 @@ Code accompanying the paper
 ***Learning Diverse-Structured Networks for Adversarial Robustness*** [paper](https://arxiv.org/abs/2102.01886)  
 <!-- -->
 
+## Requirements
++ Pytorch==1.7.0, torchvision==0.7.0
++ Python 3.7
++ [AutoAttack](https://github.com/fra31/auto-attack)
 
 ## Training and Evaluation
 
