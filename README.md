@@ -5,8 +5,8 @@ Code accompanying the paper
 <!-- -->
 
 ## Requirements
-+ Pytorch==1.7.0, torchvision==0.7.0
-+ Python 3.7
++ Pytorch==1.7.0, torchvision==0.8.1
++ Python==3.8.5
 + [AutoAttack](https://github.com/fra31/auto-attack)
 
 ## Training and Evaluation
