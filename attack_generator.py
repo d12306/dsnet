@@ -7,7 +7,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 # from models import *
 from autoattack  import AutoAttack
-from model.adaptive_model_cifar10_small_space import *
+from model.ds_net import *
 from apex import amp, optimizers
 from torchvision import transforms
 import random
