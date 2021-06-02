@@ -4,9 +4,12 @@ Code accompanying the paper
 ***Learning Diverse-Structured Networks for Adversarial Robustness*** [paper](https://arxiv.org/abs/2102.01886)  
 <!-- -->
 <p align="center">
-    <img src="images/flyer.png" width="650"\>
+    <img src="images/flyer.png" width="750"\>
 </p>
 <p align="center">
+
+## Abstract
+In *adversarial training* (AT), the main focus has been the objective and optimizer while the model has been less studied, so that the models being used are still those classic ones in *standard training* (ST). Classic *network architectures* (NAs) are generally worse than searched NAs in ST, which should be the same in AT. In this paper, we argue that NA and AT cannot be handled independently, since given a dataset, the optimal NA in ST would be *no longer optimal* in AT. That being said, AT is time-consuming itself; if we directly search NAs in AT over large *search spaces*, the computation will be practically infeasible. Thus, we propose a *diverse-structured network* (DS-Net), to significantly reduce the size of the search space: instead of low-level operations, we only consider predefined *atomic blocks*, where an atomic block is a time-tested building block like the residual block. There are only a few atomic blocks and thus we can weight all atomic blocks rather than find the best one in a searched block of DS-Net, which is an essential trade-off between *exploring* diverse structures and *exploiting* the best structures. Empirical results demonstrate the advantages of DS-Net, i.e., weighting the atomic blocks.
 
 ## Requirements
 + Pytorch==1.7.0, torchvision==0.8.1
