@@ -3,6 +3,10 @@
 Code accompanying the paper  
 ***Learning Diverse-Structured Networks for Adversarial Robustness*** [paper](https://arxiv.org/abs/2102.01886)  
 <!-- -->
+<p align="center">
+    <img src="images/flyer.png" width="650"\>
+</p>
+<p align="center">
 
 ## Requirements
 + Pytorch==1.7.0, torchvision==0.8.1
