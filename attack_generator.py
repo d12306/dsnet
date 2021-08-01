@@ -46,7 +46,7 @@ def pgd_train(
         omega,
         state='train'):
     model.eval()
-    if args.is_softmax or args.is_gumbel or args.is_diri:
+    if args.is_softmax:
         model.arch_param.requires_grad = False
 
     if category == "trades":
@@ -93,7 +93,7 @@ def pgd_train(
 
 def eval_clean(args, model, test_loader):
     model.eval()
-    if args.is_softmax or args.is_gumbel or args.is_diri:
+    if args.is_softmax:
         model.arch_param.requires_grad = False
     test_loss = 0
     correct = 0
@@ -132,7 +132,7 @@ def eval_robust(args,
                 category, 
                 rand_init):
     model.eval()
-    if args.is_softmax or args.is_gumbel or args.is_diri:
+    if args.is_softmax:
         model.arch_param.requires_grad = False
     test_loss = 0
     correct = 0
@@ -168,7 +168,7 @@ def eval_robust_aa(args,
                 category, 
                 rand_init):
     model.eval()
-    if args.is_softmax or args.is_gumbel or args.is_diri:
+    if args.is_softmax:
         model.arch_param.requires_grad = False
     test_loss = 0
     correct = 0
